@@ -1,0 +1,179 @@
+:root {
+    font-size: 50;
+    font-size: 15px;
+    line-height: 1.5;
+    --primary-color: #ce2bad;
+}
+body{
+    padding: 0;
+    margin: 0;
+    font-family:'Roboto',sans;
+    font-weight: 500;
+}
+h1{
+    font-size:25px;
+    font-weight: 700;
+}
+h2{
+    font-size: 18px;
+    font-weight: 700;
+}
+a{
+    text-decoration: none;
+    color: var(--primary-color);
+}
+a:hover{
+    text-decoration: underline;
+}
+.small{
+    font-size: 10px;
+    text-align: center;
+}
+.split-screen{
+    display: flex;
+    flex-direction: column;
+}
+.image-side,  .text-side{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.image-side{
+    background: linear-gradient(rgba(254, 33, 33, 0),rgba(228, 148, 9, 0.5)),url('dribbbleBackgroundImage.png');
+    background-size: cover;
+}
+.image-side, .copy{
+    color: rgb(213, 152, 30);
+    text-align: center;
+    -webkit-font-smoothing:antialiased;
+    -moz-osx-font-smoothing:grayscale;
+}
+.image-side, p{
+    font-weight: 700;
+
+}
+.text-side, .copy{
+    color: black;
+    text-align: center;
+}
+.text-side, .copy,p{
+    margin: 10px 0;
+    font-size: 15px;
+}
+.text-side form{
+    width: 328px;
+}
+form input[type="text"],form input[type="email"],form input[type="password"]{
+    display: block;
+    width: 100%;
+    box-sizing: border-box;
+    border-radius: 8px;
+    border: 1px solid #c4c4c4;
+    padding: 10px;
+    margin-bottom: 1.25rem;
+    font-size: 15px;
+}
+label{
+    display: block;
+    margin-bottom:2px;
+    font-size: 15px;
+}
+.input-container .password{
+    position: relative;
+}
+.input-container .password i{
+    position: absolute;
+    top: 42px;
+    right: 16px;
+}
+.checkbox-container input{
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+}
+.checkbox-container{
+    display: block;
+    position: relative;
+    padding-left: 0.5px;
+    cursor: pointer;
+    user-select: none;
+    margin: 0 0 1px 0;
+}
+.checkbox-container input:checked~ .checkmark{
+    background-color: var(--primary-color);
+    border: 1px solid var(--primary-color);
+
+}
+.checkmark{
+    position: absolute;
+    width: 24px;
+    height: 24px;
+    background: white;
+    border: 1px solid #c4c4c4;
+    top: -4px;
+    left: -10px;
+}
+.checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+.checkbox-container input:checked~ .checkmark:after{
+    border: solid white;
+    border-width: 0 3px 3px 0;
+    width: 5px;
+    height: 10px;
+    left: 8px;
+    top: 4px;
+    transform: rotate(45deg);
+}
+.account-btn{
+    display: block;
+    width: 100%;
+    background: var(--primary-color);
+    color: white;
+    font-weight: 700;
+    border: none;
+    padding: 1rem;
+    border-radius: 8px;
+    font-size: 15px;
+    letter-spacing: 0.5px;
+}
+.account-btn:hover{
+    background: #be55a9;
+    cursor: pointer;
+}
+
+@media screen and (min-width:900px) {
+    .split-screen{
+        flex-direction: row;    
+    }
+    .image-side, .text-side{
+        flex: 100%;
+    }
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

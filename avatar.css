@@ -1,0 +1,184 @@
+body {
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    line-height: 1.5;
+    margin: 0;
+    padding: 0;
+  }
+  .header{
+    margin: 0;
+    padding: 10px;
+    display: inline-block;
+}
+  
+  .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto;
+  }
+  
+  .form-field {
+    margin-bottom: 20px;
+  }
+  .plus-icon {
+    position: relative;
+    display: block;
+    width: 100px;
+    height: 100px;
+    padding: 15px;
+    border-radius: 50%;
+    font-size: 25px;
+    cursor: pointer;
+    float: left;
+  }
+ 
+  .plus-icon img {
+    width: 100%;
+    height: 100%; 
+  }
+
+  .input-file {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    cursor: pointer;
+  }
+  .avatar-img {
+    border-radius: 50%; /* Add this line to make the uploaded image circular */
+  }
+  
+  label {
+    display: block;
+    font-size: 1.25rem;
+    font-weight: 700;
+    margin-bottom: 10px;
+  }
+  .default-images img {
+    display: none;
+  }
+  
+  input[type="text"],
+  input[type="file"] {
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 1rem;
+  }
+  
+  input[type="text"] {
+    height: 40px;
+  }
+  .input-file {
+    height: 30px; /* Reduce the height of the input element */
+    background-image: url('img/default_image.jpg'); /* Set the default image as the background of the input element */
+    background-size: cover; /* Make the background image cover the entire area of the input element */
+    background-position: center; /* Center the background image */
+    border: none;
+  }
+  .avatar-container {
+    display: flex;
+    align-items: center;
+    position: relative;
+  }
+  
+  .default-images {
+    list-style: none;
+    text-decoration: none;
+    display: flex;
+    padding: 0;
+    margin-left: 20px;
+    
+  }
+  
+  .default-images img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-right: 10px;
+    cursor: pointer;
+  }
+  
+  .default-images img:hover {
+    opacity: 0.8;
+  }
+  
+  .choose-default {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    background-color: pink;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 5px 10px;
+    font-size: 0.875rem;
+    cursor: pointer;
+  }
+  
+  .choose-default:hover {
+    background-color: #f698db;
+  }
+  
+  .next-button {
+    width: 100%;
+    padding: 10px;
+    background-color: #e852cd;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.25rem;
+    cursor: pointer;
+  }
+  
+  .next-button:hover {
+    background-color: #e97dc5;
+  }
+  .return-button{
+    top: 0;
+    left: 10px;
+    color: grey;
+    margin-top:10px ;
+    padding: 0;
+    border: none;
+  }
+  
+  .choose-image-button {
+    display: none;
+  }
+  
+  @media (min-width: 768px) {
+    .avatar-container {
+      flex-wrap: wrap;
+    }
+  
+    .default-images {
+      flex-basis: 50%;
+    }
+  
+    .choose-default {
+      display: none;
+    }
+  
+    .choose-image-button {
+      display: block;
+      width: 100%;
+      padding: 10px;
+      background-color: #00a6ff;
+      color: #fff;
+      border: none;
+      border-radius: 5px;
+      font-size: 1.25rem;
+      cursor: pointer;
+    }
+  
+    .choose-image-button:hover {
+      background-color: #007aff;
+    }
+  }

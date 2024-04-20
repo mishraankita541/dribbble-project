@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="css/profile.css">
+  <title>Dribbble Profile Form</title>
+</head>
+<body>
+  <header>
+    <img src="img/dribbble logo_icon (2).png" alt="">
+  </header>
+  <div class="container">
+    <h1>Welcome! Let's create your profile</h1>
+    <h4>Let's other get to know you better! You can do this later</h4>
+    <div class="avatar">
+      <p>Add an avatar</p>
+      <label for="avatar" class="plus-icon">
+        <img src="img/plus_icon.png" alt="Plus icon" id="plus-icon-img" class="avatar-img">
+      </label>
+      <input type="file" id="avatar" accept="image/*" class="input-file">
+    </div>
+    <div class="default-images">
+      <p> &gt  Or Choose one of our default.</p>
+      <ul class="default-images">
+        <li><a href="#" data-image="image1.jpg">Choose default </a></li>
+        <li><a href="#" data-image="image2.jpg">Choose default</a></li>
+      </ul>
+    </div>
+      <div class="form-field">
+        <label for="location" class="location-label">Add your location</label>
+        <input type="text" id="location" placeholder="Enter your location">
+      </div>
+      <button type="submit">Next</button>
+    </form>
+  </div>
+  <script src="js/profile.js"></script>
+</body>
+</html>

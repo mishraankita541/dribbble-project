@@ -1,4 +1,4 @@
-// const form = document.getElementById("profile-form");
+
 const locationInput = document.getElementById("location");
 const defaultImages = document.querySelectorAll(".default-images li a");
 const plusIconImg = document.getElementById('plus-icon-img');
@@ -22,13 +22,6 @@ defaultImages.forEach((image) => {
     input.value = image.dataset.image;
   });
 });
-
-// defaultImages.forEach((image) => {
-//   image.addEventListener("click", (event) => {
-//     event.preventDefault();
-//     avatarInput.value = event.target.dataset.image;
-//   });
-// });
 
 form.addEventListener("submit", (event) => {
   event.preventDefault();

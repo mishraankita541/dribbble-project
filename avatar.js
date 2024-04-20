@@ -1,6 +1,4 @@
 
-// const chooseDefaultButton = document.querySelector(".choose-default");
-// const chooseImageButton = document.querySelector(".choose-image-button");
 const form = document.getElementById("profile-form");
 const defaultImages = document.querySelectorAll(".default-images li a");
 const plusIconImg = document.getElementById('plus-icon-img');
